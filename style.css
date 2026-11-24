@@ -1,0 +1,173 @@
+
+/* Step 1: Reset browser default styles */
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+}
+
+/* Step 2: Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F7FC;
+    color: #25213B;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Step 3: Main application container */
+.app-container {
+    max-width: 900px;
+    margin: 0 auto ;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+/* Step 4: Header */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    color: purple;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+/* Step 5: Sections */
+.task-input,
+.task-list {
+    background-color: white;
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Step 6: Input */
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* Step 7: Button */
+button {
+    background-color: #6D35D5;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #5425B5;
+}
+task-input{
+    width : 500px;
+    padding: 30px;
+    border : 100 px;
+    margin : 100 px;
+}
+@media (max-width: 600px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
+
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(109, 53, 213, 0.3);
+}
+
+.task-input,
+.task-list {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-input:hover,
+.task-list:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+#taskList input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+#taskList li button {
+    margin-left: auto;
+    background-color: #FEECEC;
+    color: #DC3545;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+#taskList li button:hover {
+    background-color: #DC3545;
+    color: white;
+}
+.task-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #F0EDFA;
+    color: #6D35D5;
+}
+
+.filter-btn.active {
+    background-color: #6D35D5;
+    color: white;
+}

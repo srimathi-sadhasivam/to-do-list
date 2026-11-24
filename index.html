@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header>
+            <h1>HEYYY SIRI </h1>
+            <p>Manage your tasks efficiently.</p>
+        </header>
+
+        <main>
+            <section class="task-input">
+                <h2>Add New Task</h2>
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task..."
+                >
+
+                <button id="addTaskBtn">Add Task</button>
+            </section>
+
+            <section class="task-list">
+                <h2>My Tasks</h2>
+<div class="task-filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+                <ul id="taskList">
+                </ul>
+            </section>
+        </main>
+        
+
+    </div>
+   </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
